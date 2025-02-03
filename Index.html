@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas Juego Pádel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estadísticas de Pádel</h1>
+
+        <div class="scoreboard">
+            <div class="team">
+                <h2>Equipo 1</h2>
+                <p id="scoreTeam1">0</p>
+                <button onclick="incrementScore('team1')">Sumar punto</button>
+            </div>
+            <div class="team">
+                <h2>Equipo 2</h2>
+                <p id="scoreTeam2">0</p>
+                <button onclick="incrementScore('team2')">Sumar punto</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <h3>Estadísticas:</h3>
+            <button onclick="resetGame()">Reiniciar juego</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
